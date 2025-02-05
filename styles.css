@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background: fixed no-repeat url(images/messsi.webp);
+    background-size: cover;
+    font-family: monospace;
+    color: white;
+    letter-spacing: 2px
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 100%;
+    shape-outside: circle();
+    margin: 10px;
+}
+
+
+.details {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 0;
+}
+
+.details>div {
+    background-color: rgba(0, 0, 0, 0.475);
+    border: solid;
+    padding: 0;
+}
+
+
+a {
+    border: solid 2px whitesmoke;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: red;
+}
+
+p {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.475);
+}
+
+a:hover {
+    background-color: blue;
+}
+
+
+a:active {
+    background-color: green;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+main div:first-child {
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.475);
+}
+
+main div:last-child {
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.475);
+
+}
+
+b {
+    color: gold;
+}
+
+.mobile {
+    display: none;
+}
+
+.lappy {
+    display: block;
+}
+
+@media screen and (max-width: 766px) {
+    main {
+        display: block;
+    }
+
+    header {
+        display: block;
+    }
+
+    img {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .details {
+        display: flex;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    main div:last-child {
+        display: none;
+    }
+
+    .lappy {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+}
